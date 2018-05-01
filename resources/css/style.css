@@ -1,0 +1,43 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+body, a {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 69px;
+  top: 0px;
+  border-bottom: 1px solid seashell;
+}
+
+span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+nav {
+
+}
+
+header img {
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 10px;
+}
