@@ -2,14 +2,33 @@
   width: device-width;
 }
 
-body, a {
+body, header {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
+  opacity: .9;
   text-align: center;
 }
+
+a {
+  text-decoration: underline;
+}
+
+h2, h3, h4 {
+  font-weight: bold;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+/* Site Header */
 
 header {
   display: flex;
@@ -17,19 +36,16 @@ header {
   flex-wrap: wrap;
   position: fixed;
   z-index: 1;
+  top: 0;
   width: 100%;
   height: 69px;
-  top: 0px;
   border-bottom: 1px solid seashell;
+  opacity: 1;
 }
 
 span {
   display: inline-block;
   padding: 20px 10px;
-}
-
-nav {
-
 }
 
 header img {
@@ -40,4 +56,91 @@ header img {
   display: flex;
   flex-grow: 1;
   padding-left: 10px;
+}
+
+/* Main Content */
+
+main {
+  margin-top: 70px;
+  width: 100%;
+}
+
+/* Mission Section */
+
+#hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url(../images/img-mission-background.jpg);
+}
+
+.hero-content {
+  background-color: black;
+}
+
+/* Tea of the Month Section */
+
+#tea-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  margin: 40px auto;
+}
+
+.tea-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tea-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  padding: 10px;
+}
+
+.tea-type img {
+  height: 200px;
+}
+
+.tea-type h4 {
+  padding-top: 15px;
+}
+
+/* Locations Section */
+
+#locations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url(../images/img-locations-background.jpg);
+}
+
+.locations-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.location {
+  width: 300px;
+  background-color: black;
+  margin: 15px 20px;
+  padding: 20px 0;
+}
+
+p {
+  line-height: 3em;
 }
