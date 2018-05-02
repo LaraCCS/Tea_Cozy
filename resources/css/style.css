@@ -15,7 +15,7 @@ a {
   text-decoration: underline;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   font-weight: bold;
   padding: 10px;
 }
@@ -26,6 +26,10 @@ h2 {
 
 h3 {
   font-size: 1em;
+}
+
+h5 {
+  font-size: .75em;
 }
 
 /* Site Header */
@@ -143,4 +147,20 @@ main {
 
 p {
   line-height: 3em;
+}
+
+/* Contact Section */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/* Footer Section */
+
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
